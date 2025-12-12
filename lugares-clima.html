@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Río de Janeiro - Clima & Más</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="img/favicon brasil.webp" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="topo">
+
+  <header class="main-header">
+    <div class="logo">
+      <img src="img/planta para sitio.webp" alt="Flor" class="logo-flor">
+      <span>Río de Janeiro</span>
+    </div>
+
+    <button class="nav-toggle" type="button" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html#imprescindible">Lo imprescindible</a></li>
+        <li><a href="index.html#barrios">Guía de barrios</a></li>
+        <li><a href="index.html#comida">Qué comer</a></li>
+        <li><a href="index.html#playas">Playas</a></li>
+        <li><a href="lugares-clima.html" class="active">Clima & más</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-simple">
+      <div class="hero-simple-texto">
+        <h1>Clima en Río de Janeiro</h1>
+        <h2>Calor, sol y ritmo casi todo el año</h2>
+        <p>Cómo cambia el clima según la época y qué esperar en cada temporada.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt clima-card-grande">
+      <div class="clima-layout">
+        <div class="clima-texto">
+          <h3>¿Qué esperar del tiempo?</h3>
+          <p>La sensación general es de verano eterno, pero el clima cambia ligeramente según la época:</p>
+          <ul>
+            <li><strong>Verano (diciembre–marzo):</strong> altas temperaturas, humedad y tormentas de tarde.</li>
+            <li><strong>Otoño (abril–junio):</strong> días agradables, menos lluvia y buena luz para fotos.</li>
+            <li><strong>Invierno (julio–agosto):</strong> temperaturas suaves, mañanas frescas y cielos despejados.</li>
+            <li><strong>Primavera (septiembre–noviembre):</strong> vuelve el calor y la ciudad se llena de planes al aire libre.</li>
+          </ul>
+        </div>
+
+       
+        <div class="clima-chart">
+  <canvas id="climaChart" height="280"></canvas>
+</div>
+    </section>
+
+    <section class="section section-alt clima-ideas">
+      <h2>Ideas para un día perfecto según el clima</h2>
+      <div class="cards-grid">
+        <article class="card clima-card">
+          <h3>Día de calor intenso</h3>
+          <p>Empieza temprano en la playa, sube al Pan de Azúcar al atardecer y termina con una caipirinha en Urca.</p>
+        </article>
+        <article class="card clima-card">
+          <h3>Día nublado</h3>
+          <p>Explora Santa Teresa, visita museos en el centro y termina en Lapa con samba en vivo.</p>
+        </article>
+        <article class="card clima-card">
+          <h3>Día de lluvia</h3>
+          <p>Cafeterías acogedoras, librerías, arte urbano cubierto y miradores cuando las nubes se abren.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <p>© 2025 Guía de Río de Janeiro · Clima & Más</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
+
+  
+</body>
+</html>
